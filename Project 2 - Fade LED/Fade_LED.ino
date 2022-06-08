@@ -2,7 +2,7 @@ int LED = 10;
 
 void setup() 
 {
-    
+    pinMode(LED, OUTPUT);
 }
 
 void loop() 
@@ -13,9 +13,9 @@ void loop()
       delay(30);
     }
     
-    for(int i = 255; i > 1; i-=20)
+    for(int j = 255; j > 1; j-=20)
     {
-      analogWrite(LED, i);
+      analogWrite(LED, j);
       delay(30);
     }
 }
